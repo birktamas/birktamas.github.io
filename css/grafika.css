@@ -1,0 +1,45 @@
+.fejlec {
+    background-color: grey;
+    border: 13px ridge red;  
+    text-align: center;
+    line-height: 0;
+    height: 100px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+#magunkrol {
+    display: block;
+    font-size: 20px;
+    text-align: justify;
+    background-color: silver;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#etlapcim {
+    background-color: silver;
+       
+}
+
+.body {
+    background-color: silver;
+}
+
+.index {
+    font-size: 40px;
+    text-align: center;
+}
+
+.elérhetőségeink {
+    text-align: center;
+}
+
+.table-ridge {
+    border: 10px ridge grey;  
+}

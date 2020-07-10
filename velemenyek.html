@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vélemények</title>
+    <link rel="stylesheet" href="css/grafika.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+</head>
+
+<body class="body">
+    <div class="fejlec">
+        <h1 class="display-4"><strong>Birk Burger Bár</strong></h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: silver;">
+        <a class="navbar-brand" href="/index.html">Birk Burger Bár</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/magunkrol.html">Magunkról <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/etlap.html">Étlap</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="/itallap.html">Itallap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/rendeles.html">Rendelés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/velemenyek.html">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/kapcsolat.html">Kapcsolat</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-6">
+                <h4>Kérem értékelje éttermünket az alábbiak alapján:</h4>
+                <p></p>
+                <form class="from-group">
+                    <h5>Ételeink íze:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="ízegy" name="íz" type="radio">
+                        <label class="form-check-label" for="íz">1 (rossz)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="ízkettő" name="íz" type="radio">
+                        <label class="form-check-label" for="íz">2 (ehető)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="ízhárom" name="íz" type="radio">
+                        <label class="form-check-label" for="íz">3 (átlagos)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="íznégy" name="íz" type="radio">
+                        <label class="form-check-label" for="íz">4 (finom)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="ízöt" name="íz" type="radio">
+                        <label class="form-check-label" for="íz">5 (tökéletes)</label>
+                    </div>
+                </form>
+                <p></p>
+                <form class="from-group">
+                    <h5>Ételeink ára:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="egy" name="ár" type="radio">
+                        <label class="form-check-label" for="ár">1 (horror)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="kettő" name="ár" type="radio">
+                        <label class="form-check-label" for="ár">2 (drága)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="három" name="ár" type="radio">
+                        <label class="form-check-label" for="ár">3 (rendben)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="négy" name="ár" type="radio">
+                        <label class="form-check-label" for="ár">4 (olcsó)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="öt" name="ár" type="radio">
+                        <label class="form-check-label" for="ár">5 (legolcsóbb)</label>
+                    </div>
+                </form>
+                <p></p>
+                <form class="from-group">
+                    <h5>Pincérünk modora:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="egy" name="kiszolgálás" type="radio">
+                        <label class="form-check-label" for="ár">1 (bunkó)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="kettő" name="kiszolgálás" type="radio">
+                        <label class="form-check-label" for="ár">2 (unott)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="három" name="kiszolgálás" type="radio">
+                        <label class="form-check-label" for="ár">3 (átlagos)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="négy" name="kiszolgálás" type="radio">
+                        <label class="form-check-label" for="ár">4 (udvarias)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="öt" name="kiszolgálás" type="radio">
+                        <label class="form-check-label" for="ár">5 (tökéletes)</label>
+                    </div>
+                </form>
+                <p></p>
+                <form class="from-group">
+                    <h5>Honlapunk:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="egy" name="honlap" type="radio">
+                        <label class="form-check-label" for="ár">1 (pocsék)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="kettő" name="honlap" type="radio">
+                        <label class="form-check-label" for="ár">2 (elmegy)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="három" name="honlap" type="radio">
+                        <label class="form-check-label" for="ár">3 (átlagos)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="négy" name="honlap" type="radio">
+                        <label class="form-check-label" for="ár">4 (szép)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="öt" name="honlap" type="radio">
+                        <label class="form-check-label" for="ár">5 (gyönyörű)</label>
+                    </div>
+                </form>
+                <p></p>
+                <button onclick=() type=button class="btn btn-primary">Küldés</button>
+    
+            </div>
+            <div class="col-6">
+                <h4>Szöveges vélemény:</h4>
+                <div class="form-group">
+                    <label for="">Itt szöveges formában is leírhatja véleményét:</label>
+                    <textarea id="vélemény" name="vélemény" class="form-control" rows=10></textarea>
+                </div>
+                <p></p>
+                <button onclick=() type=button class="btn btn-primary">Küldés</button>
+            </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

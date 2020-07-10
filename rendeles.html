@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="css/grafika.css">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+</head>
+<body class="body">
+    <div class="fejlec">
+        <h1 class="display-4"><strong>Birk Burger Bár</strong></h1>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: silver;">
+        <a class="navbar-brand" href="/index.html">Birk Burger Bár</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/magunkrol.html">Magunkról <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/etlap.html">Étlap</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="/itallap.html">Itallap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/rendeles.html">Rendelés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/velemenyek.html">Vélemények</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/kapcsolat.html">Kapcsolat</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>
+            A rendelés leadásához kérem töltse ki a következő űrlapokat:
+        </h3>
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <h5>Megrendelő személyes adatai</h5>
+                    <div class="form-group">
+                        <label for="">Név: *</label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail cím: *</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Szállítási cím: *</label>
+                        <input id="cím" name="cím" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Megjegyzés:</label>
+                        <textarea id="megjegyzés" name="megjegyzés" class="form-control" rows="3"></textarea>
+                    </div>                    
+                </form>
+            </div>
+            
+            <div class="col-6">
+                <h5>Hamburgerek rendelése</h5>
+                    
+                <form>
+                    <label for="hamburgerválasztás">Válassza ki a hamburgert:</label>
+                    <select name="hamburger" id="hamburgerválasztás">
+                        <option value="">--Válasszon az alábbiak közül--</option>
+                        <option value="1000">Klasszik burger</option>
+                        <option value="1100">Sajtburger</option>
+                        <option value="1400">3-féle sajtos</option>
+                        <option value="1200">Zöldséges</option>
+                        <option value="1200">Bacon-ös</option>
+                        <option value="1700">Óriás</option>
+                    </select>
+                </form>
+                <form>
+                    <h6>Jelölje meg, ha extra feltétet kér:</h6>
+                    <div>
+                        <input checked id="nincsextra" name="extra" type="checkbox" value="0">
+                        <label for="nincsextra">Nincs extra feltét</label>
+                    </div>
+                    <div>
+                        <input id="cheddar" name="cheddar" type="checkbox" value="150">
+                        <label for="cheddar">Cheddar</label>
+                    </div>
+                    <div>
+                        <input id="pluszhus" name="pluszhus" type="checkbox" value="400">
+                        <label for="pluszhus">Plusz hús</label>
+                    </div>
+                    <div>
+                        <input id="paradicsom" name="paradicsom" type="checkbox" value="50">
+                        <label for="paradicsom">Paradicsom</label>
+                    </div>
+                    <div>
+                        <input id="uborka" name="uborka" type="checkbox" value="50">
+                        <label for="uborka">Uborka</label>
+                    </div>
+                </form>
+                <form>
+                    <label for="szószválasztás">Válassza ki a szószt:</label>
+                    <select name="szósz" id="szószválasztás">
+                        <option value="">--Válasszon az alábbiak közül--</option>
+                        <option value="0">Házi</option>
+                        <option value="0">Ketchup</option>
+                        <option value="0">Mustár</option>
+                        <option value="0">Ketchup+mustár</option>
+                        <option value="0">Csípős</option>
+                    </select>
+                </form>   
+                <div class="form-group">
+                    Fizetendő: <span class="mutasdAzÖsszeget">0</span>Ft
+                </div>
+
+                <button onclick=fizetendőKiszámolás() type=button class="btn btn-primary">Fizetendő</button>                             
+            </div>
+        </div>
+    </div>
+
+    <script src="js/rendeles.js"></script>
+
+</body>
+
+</html>
